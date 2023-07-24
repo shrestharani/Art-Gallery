@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+        @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+        body {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        padding-top: 60px;
+        }
+        h2 {
+        font-size: 50px;
+        margin-bottom: 0px;
+        font-weight: 100;
+        }
+        p {
+        font-size: 18px;
+        }
+        .transition {
+        transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+        }
+        .three .transition {
+        transition: .7s cubic-bezier(.3, 0, 0, 1.3)
+        }
+        .five .transition {
+        transition: .5s cubic-bezier(.3, 0, 0, 1.3)
+        }
+        /* --------- THREE --------- */
+        .three {
+        list-style: none;
+        padding: 0;
+        margin: 100px 0;
+        }
+        .three > li {
+        background: #FFFFFF;
+        border: 1px solid rgba(150,150,150,0.29);
+        -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+        box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+        width: 250px;
+        height: 430px;
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+        }
+        .three > li img {
+        margin-top: 60px;
+        }
+        .three > li:hover img {
+        margin-top: 40px;
+        }
+        .three > li:hover {
+        -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+        box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+        }
+        .three > li:hover span {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        bottom: -400px;
+        }
+        .three > li:hover h3 {
+        color: rgba(255,255,255,1);
+        margin-top: 25px;
+        }
+        .three > li .wrapper {
+        overflow: hidden;
+        position: absolute;
+        width: 250px;
+        height: 430px;
+        }
+        .three > li span {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        height: 500px;
+        width: 500px;        
+        background: #3385ff;
+        display: block;
+        position: absolute;
+        bottom: 150px;
+        left: -125px;
+        }
+        .three > li span img {
+        margin-top: 10px;
+        width: 50px;
+        }
+        
+        .three > li span i {
+        position: absolute;
+        bottom: -90px;
+        color:black;
+        text-transform: uppercase;
+        border-radius: 50px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border: 2px solid black;
+        padding: 10px 30px;
+        font-style: normal;
+        display: inline-block;
+        left: 195px;
+        }
+        .three > li span .mamber-img {
+        width: 120px;
+        margin-top: 170px;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
+        }
+        .three > li span .mamber-img + h3 {
+        margin-top: 20px;
+        }
+        .three > li h3 {
+        margin-top: 40px;
+        color: rgba(255,255,255,1);
+        }
+        .three > li h3 em {
+        display: block;
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 5px;
+        }
+        .three .social {
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        }
+        .three .social li {
+        opacity: 0;
+        display: inline-block;
+        padding: 5px;
+        }
+        .three > li:hover .social li {
+        opacity: 0.8;
+        }
+        .three .social li a {
+        cursor: pointer;
+        display: block;
+        }
+        .three .social li a:hover {
+        opacity: 0.5;
+        }
+        .three .social li img {
+        width: 24px;
+        color: blue;
+        transition: 0.5s;
+        }
+        .three .social li img:hover {
+        transform: rotateY(360deg);
+        animation-delay: 4s;
+        }
+        body{
+            background-color: #eeeeee;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Our Team Member 2020-21</h2>
+        <!--<p>Not another fluffy team presentation</p>-->
+        <!-- ********* <3 ********* THREE ********* <3 ********* -->
+        <ul class="three">
+            <li class="transition">
+                <div class="wrapper">
+                    <img class="transition" src="" style="width:100px;border-radius:50%;">
+                    <ul class="social">
+                        <li>
+                            
+                        </li>
+                        <li class="transition"><a href="https://twitter.com/hashtag/login?lang=en" target="_blank"><img src="images/twitter-logo.png"></a></li>
+                        <li class="transition"><a href="https://www.behance.net/gallery/5570413/Login" target="_blank"><img src="images/behance-logo.png"></a></li>
+                        <li class="transition"><a href="https://en-gb.facebook.com/login/" target="_blank"><img src="images/facebook-logo.png"></a></li>
+                        <li class="transition"><a href="https://account.microsoft.com/account/skype" target="_blank"><img src="images/skype-logo.png"></a> </li>
+                        <li class="transition"><a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp-logo.png"></a> </li>
+                    </ul>
+                    <span class="transition">
+                        <h3>
+                            
+                            <em>Artist</em></h3>
+                        <img class="mamber-img" src="img/shrestha.jpg" style="width:100px;border-radius:50%;" >
+                        <h3></h3>
+                         
+                    </span>
+                </div>
+            </li>
+            <li class="transition">
+                <div class="wrapper">
+                    <img class="transition" src="http://localhost:49895/img/shrestha.jpg" style="width:100px;border-radius:50%;">
+                    <ul class="social about">
+                        <li>
+                            
+                        </li>
+                        <li class="transition"><a href="https://twitter.com/hashtag/login?lang=en" target="_blank">
+    <img src="img/pencil_art1.jpg" />
+</a></li>
+                        <li class="transition"><a href="https://www.behance.net/gallery/5570413/Login">
+    <img src="img/pencil_art2.jpg" />
+</a></li>
+                        <li class="transition">
+                            <a href="https://en-gb.facebook.com/login/" target="_blank"></a>
+                            <img src="img/pencil_art3.JPG" />
+                        </li>
+                        <li class="transition">
+                            <a href="https://account.microsoft.com/account/skype"></a>
+                            <img src="img/pencil_art4.JPG" />
+                        </li>
+                        <li class="transition"><a href="https://www.whatsapp.com/" target="_blank">
+    <img src="img/pencil_art5.jpg" />
+</a> </li>
+                    </ul>
+                    <span class="transition">
+                        <h3>Shrestharani<em>Artist </em></h3>
+                        <img class="mamber-img" src="img/shrestha.jpg" style="width:100px;border-radius:50%;">
+                        <h3>Shrestharani</h3>
+                       
+                    </span>
+                </div>
+            </li>
+            <li class="transition">
+                <div class="wrapper">
+                    <img class="transition" src="riya.jpeg" style="width:100px;border-radius:50%;">
+                    <ul class="social">
+                        <li>
+                            Bacelors of technology,Delhi <br>
+                            Find her on:
+                        </li>
+                        <li class="transition"><a href="https://twitter.com/hashtag/login?lang=en" target="_blank"><img src="images/twitter-logo.png"></a></li>
+                        <li class="transition"><a href="https://www.behance.net/gallery/5570413/Login"><img src="images/behance-logo.png"></a></li>
+                        <li class="transition"><a href="https://en-gb.facebook.com/login/" target="_blank"><img src="images/facebook-logo.png"></a></li>
+                        <li class="transition"><a href="https://account.microsoft.com/account/skype" target="_blank"><img src="images/skype-logo.png"></a> </li>
+                        <li class="transition"><a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp-logo.png"></a> </li>
+                    </ul>
+                    <span class="transition">
+                        <h3>Riya Patel<em>Tester</em></h3>
+                        <img class="mamber-img" src="riya.jpeg" style="width:100px;border-radius:50%;">
+                        <h3>Riya Patel</h3>
+                        <i>More</i> 
+                    </span>
+                </div>
+            </li>
+            <li class="transition">
+                <div class="wrapper">
+                    <img class="transition" src="dhruv.jpeg" style="width:100px;border-radius:50%;">
+                    <ul class="social about">
+                        <li>
+                            Bachelors of computer applications.<br>
+                            Find him on:
+                        </li>
+                        <li class="transition"><a href="https://twitter.com/hashtag/login?lang=en" target="_blank"><img src="images/twitter-logo.png"></a></li>
+                        <li class="transition"><a href="https://www.behance.net/gallery/5570413/Login"><img src="images/behance-logo.png"></a></li>
+                        <li class="transition"><a href="https://en-gb.facebook.com/login/" target="_blank"><img src="images/facebook-logo.png"></a></li>
+                        <li class="transition"><a href="https://account.microsoft.com/account/skype"><img src="images/skype-logo.png"></a> </li>
+                        <li class="transition"><a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp-logo.png"></a> </li>
+                    </ul>
+                    <span class="transition">
+                        <h3>Dhruv Gandhi<em>Tester </em></h3>
+                        <img class="mamber-img" src="dhruv.jpeg" style="width:100px;border-radius:50%;">
+                        <h3>Dhruv Gandhi</h3>
+                         <i>More</i>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

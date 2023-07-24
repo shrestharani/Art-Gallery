@@ -1,0 +1,120 @@
+﻿body {
+}
+
+
+#dimg
+{
+    width:130px;
+    height:150px;
+    margin-left:25px;
+    }
+    .vimage
+    {
+        border:solid 1px #e4e4e4;
+    }
+      .vimage:hover
+    {
+        border:solid 1px #ff6600;
+    }
+    
+    
+#dname
+{
+    width:182px;
+    height:50px;
+    border:solid 1px gray;
+    margin-left:0px;
+    margin-top:5px;
+    margin-bottom:10px;
+    }
+    #dname:hover
+{
+    width:182px;
+    height:50px;
+    border:solid 1px gray;
+    margin-left:0px;
+    margin-top:5px;
+    margin-bottom:10px;
+    background:#ff6600;
+    color:#fff;
+    }
+    .btn
+    {
+        background:#ff6600;
+        border:solid 1px #fff;
+        color:#fff; cursor:pointer;
+        }
+    .btn:hover
+    {
+        background:#fff;
+        border:solid 1px #ff6600;
+        color:#ff6600;
+        
+        }
+.dtbl {
+    border: solid 1px #fff;
+    height: 88px;
+    width: 210px;
+    margin-left: 10px;
+margin-top:15px;
+}
+            
+             .dtbl:hover
+        {
+            border:solid 1px #ff6600;
+            box-shadow: 2px 2px 2px 0px #ff6600;
+            }
+            
+            .lbl
+            {
+                text-align:right;
+                font-size:medium;
+                color:gray;
+                height:30px;
+                }
+                .tblhead
+{
+ background:grey;
+ color:#fff;
+ font-weight:bold;
+ text-align:center;
+ height:25px;   
+    }
+    
+    .txtlogin
+    {
+        border:solid 1px grey;
+        box-shadow: 3px 3px 3px #ccc;
+        text-align:left;
+        
+        }
+        
+         .lbllogin
+    {
+       text-align:right;
+        height:30px;
+         
+        color:black;
+        font-weight:bold;
+        font-size:14px;
+        }
+        
+        .btnlogin
+        {
+           
+            color:black;
+            background:#fff;
+            font-weight:bold;
+            border:solid 1px black;
+    text-align: center;
+}
+            
+            .btnlogin:hover
+        {
+             height:30px;
+            color:black;
+            background:red;
+            font-weight:bold;
+            
+            }
+                
