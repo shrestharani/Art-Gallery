@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="css/images/favicon.ico" />
+    <link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <link rel="Stylesheet" href="css/style.css" type="text/css" media="all" />
+
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if IE 6]>
+		<script src="js/DD_belatedPNG-min.js" type="text/javascript" charset="utf-8"></script>
+	<![endif]-->
+    <script src="js/cufon-yui.js" type="text/javascript"></script>
+    <script src="js/Myriad_Pro_700.font.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/functions.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+        }
+    </style>
+
+    <%--New Bootstrap Links Start --%>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <%--New Bootstrap Links Ends --%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <!-- Begin Header -->
+            <div id="header">
+                <!-- Begin Shell -->
+                <div class="shell">
+                    <div id="logo">
+                        <asp:Label ID="lbl1" runat="server" Text="Online"></asp:Label><img src="../Admin/image/Artlogo.gif" height="200" width="200" /><asp:Label ID="lbl2" runat="server" Text="Gallery"></asp:Label>
+                       <%--<asp:Label ID="Label1" runat="server" Text="Online" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large"></asp:Label> <img src="Admin/image/Artlogo.gif" height="200" width="200" /> <asp:Label ID="Label2" runat="server" Text="Gallery" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large"></asp:Label></i></b>--%>
+                      
+                     <%--<asp:Label ID="lblonline" runat="server" Text="Online" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large"></asp:Label> <img src="Admin/image/Artlogo.gif" height="200" width="200" /> <asp:Label ID="lbl2" runat="server" Text="Gallery" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large"></asp:Label></i></b>--%>
+
+                    </div>
+                    <div class="cl">&nbsp;</div>
+                    <p id="cart">
+                        <span class="profile">Welcome
+                    <asp:Label ID="lblname" runat="server" ForeColor="#FF33CC"></asp:Label>
+                            &nbsp;</span>
+                        <span class="shopping">Shopping Cart (<asp:Label ID="lbl" runat="server"></asp:Label>
+                    ) </span>&nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True"
+                            Font-Underline="True" PostBackUrl="~/Index.aspx"
+                            CausesValidation="False">LogOut</asp:LinkButton>
+                    </p>
+                </div>
+                <!-- End Shell -->
+            </div>
+            <!-- End Header -->
+            <!-- Begin Navigation -->
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="padding-left: 18%">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.aspx">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                         <li class="nav-item dropdown" style="padding-left: 30px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="Item.aspx?cat=Spray_art" class="dropdown-item" title="Spray_art">Spray_art</a>
+                                <a href="Item.aspx?cat=traditional_art" class="dropdown-item" title="traditional_art">traditional_art</a>
+                                <a href="Item.aspx?cat=pencil_art" class="dropdown-item" title="pencil_art">pencil_art</a>
+                                <a href="Item.aspx?cat=Western_art" class="dropdown-item" title="Western_art">Western_art</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="padding-left: 30px;">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 30px;">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 30px;">
+                            <a class="nav-link" href="Cart.aspx">My Cart</a>
+                        </li>
+                        <li class="nav-item dropdown" style="padding-left: 30px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="Order.aspx" class="dropdown-item" title="My Order">My Order</a>
+                                <a href="Payment.aspx" class="dropdown-item" title="My Order">Payments</a>
+                                <a href="Account.aspx" class="dropdown-item" title="My Order">Profile</a>
+                                <a href="ChangePass.aspx" class="dropdown-item" title="My Order">Change Password</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <asp:TextBox runat="server" ID="txtsearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></asp:TextBox>
+                        <asp:Button runat="server" Text="Search" ID="btnsearch" class="btn btn-outline-success my-2 my-sm-0" type="submit" OnClick="btnsearch_Click" CausesValidation="False" />
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navigation -->
+            <!-- Begin Slider -->
+            <!-- End Slider -->
+            <!-- Begin Main -->
+            <div id="main" class="shell">
+                <!-- Begin Content -->
+                <!-- End Content -->
+                <!-- Begin Sidebar -->
+                <!-- End Sidebar -->
+                <div class="cl">&nbsp;</div>
+                <!-- Begin Products -->
+                <div id="products">
+                    <table class="style1">
+                        <tr>
+                            <td>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                    &nbsp;<div class="cl">&nbsp;</div>
+                    <div class="cl">&nbsp;dd</div>
+                    <div class="cl">&nbsp;</div>
+                </div>
+                <!-- End Products -->
+                <!-- Begin Products Slider -->
+                <!-- End Products Slider -->
+            </div>
+            <!-- End Main -->
+            <!-- Footer -->
+         <div class="row" style="margin-right:0;">
+  <div class="col-md-12" style="display: inline-flex; padding: 0;">
+      <iframe src="../footer.html" style="background: transparent" frameborder="0" height="600" width="100%"></iframe>
+  </div>
+</div>
+            <!-- Footer -->
+        </div>
+    </form>
+    <%--New Bootstrap Links Start --%>
+    <script type="" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script type="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <%--New Bootstrap Links Ends --%>
+</body>
+</html>
